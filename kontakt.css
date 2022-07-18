@@ -1,0 +1,109 @@
+.rozdeleni {
+    display: flex;
+    max-width: 99%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+section {
+    margin: 0;
+    margin-top: 15vh;
+    width: fit-content;
+    justify-content: center;
+    padding: 0;
+}
+
+form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    padding-left: 0;
+}
+
+form div { 
+    margin: 0.5em;
+    width: 100%;
+}
+
+label {
+    font-size: calc(2vmin + 2px);
+    display: block;
+    padding: 0.5em;
+}
+
+input, textarea, button {
+    width: 25em;
+    font-size: calc(1.8vmin + 2px);
+    padding: 0.6em;
+    background: #ffffff6f;
+    border: none;
+    border: 0.11em solid #000000;
+    border-radius: 1em;
+    outline: none;
+}
+
+textarea {
+    height: 6em; 
+    resize: none;
+}
+
+button {
+    width: 8em;
+    margin: 0.5vh auto;
+    font-size: calc(2.2vmin + 2px);
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+}
+
+.kontakt a {
+    font-size: calc(2.5vmin + 2px);
+    margin: 0 auto;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.kontakt a:hover::after { display: none; }
+
+.kontakt a img {
+    margin-right: 0.2em;
+    height: 1em;
+}
+
+textarea:hover, textarea:focus, input:hover, input:focus, button:hover {
+     background-color: #ffffff;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 3vh 0;
+}
+
+.mapa img {
+    max-width: 100%;
+}
+
+h2 { font-size: calc(3vmin + 4px); }
+
+@media screen and (max-width: 1000px) {
+    .rozdeleni {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin-top: 12vh;
+    }
+
+    form { margin:0 auto }
+
+    .kontakt { margin-top: 0; }
+}

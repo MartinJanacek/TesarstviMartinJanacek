@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', Arial, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    height: 100%;
+    background-color: #fff4ed;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff4ed;
+}
+
+.logo {
+    max-height: 2.5em;
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+
+.menu-text-container {
+    margin: 0 auto;
+    padding: 2vh 0;
+    max-width: min(20em, 70%);
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.2em solid #1c0d00;
+    font-size: calc(3vmin + 6px);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #1c0d00;
+    font-weight: 600;
+    font-size: calc(3vmin + 6px);
+    padding: 0 2%;
+}
+
+a::after {
+    width: 0;
+}
+
+a:hover::after {
+    content: '';
+    display: block;
+    background-color: #ffcc00;
+    height: 0.2em;
+    width: 100%;
+    margin-top: -0.3em;
+}
+
+
+main, section{
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 5%;
+    font-size: calc(2vmin + 4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    margin-top: 10vh;
+}
+
+h2, h3 {
+    font-size: calc(4.5vmin + 6px);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h2::after, h3::after {
+    content: '';
+    display: block;
+    background-color: #ffcc00;
+    height: 0.2em;
+    width: 100%;
+    margin-top: -0.3em;
+}
+
+.podtrhle::after {
+    content: '';
+    display: block;
+    background-color: #ffcc00;
+    height: 0.2em;
+    width: 100%;
+    margin-top: -0.3em;
+}
+
+footer {
+    bottom: 0;
+    max-width: 100%;
+    background-color: #fff4ed;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+footer a {
+    font-size: calc(2vmin + 2px);
+    display: flex;
+    align-items: center;
+}
+
+footer a:hover::after {content: none;}
+
+footer img {
+    max-height: 1em;
+    margin-right: 0.5em;
+}
+
+@media screen and (max-width: 790px) {
+    h2 {text-align: center;}
+
+    h2::after { margin: 0 auto;}
+}

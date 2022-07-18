@@ -1,0 +1,45 @@
+section {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3vw;
+    row-gap: 5vh;
+    padding-bottom: 10vh;
+    justify-content: space-around;
+}
+
+.section > * {
+    flex: 1 1;
+}
+
+.fotky {
+    min-width: 45%;
+    margin-top: 2vh;
+}
+
+.fotky img {
+    max-height: 30vh;
+    max-width: 98%;
+    width: auto;
+    border: 2px solid #ffffff;
+}
+
+h3 {
+    font-size: calc(3.3vmin + 4px);
+}
+
+.foto-facebook{
+    font-size: calc(2.5vmin + 4px);
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+}
+
+.foto-facebook:hover::after {display: none;}
+
+@media  screen and (max-width: 1400px)  {
+    section {
+        margin: 10vh auto;
+        justify-content: left;
+    }
+}

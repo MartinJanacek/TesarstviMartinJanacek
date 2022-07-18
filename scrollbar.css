@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+  width: 0.5vw;
+  margin: 0.2vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1c0d00;
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #1c0d00 #fff4ed;
+    scrollbar-width: thin;
+  }
+  textarea {
+    scrollbar-width: none;
+  }
+}/*# sourceMappingURL=scrollbar.css.map */
